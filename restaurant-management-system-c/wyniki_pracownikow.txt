@@ -1,0 +1,18 @@
+Adam Nowak
+16 4 6 8.12 9.45
+Barbara Kowalska
+4 1 2 6.40 7.10
+Maciej Maciejski
+10 3 6 8.60 8.10
+Anna Grabowska
+15 3 3 9.10 9.50
+Joanna Joanowska
+7 1 2 8.20 9.00
+Marek Konrad
+12 10 5 2.30 4.30 
+Grzegorz Szponar
+20 4 5 8.70 8.90
+Jakub Stanczyk
+1 0 1 7.70 8.90
+Anna Jagielonka
+5 0 0 9.00 9.20

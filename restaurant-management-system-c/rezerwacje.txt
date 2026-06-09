@@ -1,0 +1,11 @@
+Kowalski  555666777 28 01 2024 19.30 5 antresola 6
+Schmidt 890908098 06 02 2024 16.00 12 sala-glowna 12
+Kozakiewicz 506777444 13 02 2024 20.00 sala-na-pietrze  3
+Grabowska 452452101 08 03 2024 21.00 8 sala-glowna 12
+Kurek  888309653 04 02 2024 15.00 4 sala-na-pietrze 9
+Grosicki 543896471 25 02 2024 18.00 12 sala-glowna 14
+Skowronska 890674178 12 03 2024 13.00 3 antresola 5
+Krychowiak 607609908 07 02 2024 20.00 5 sala-na-pietrze 8
+Glinka 583290567 24 03 2024 18.30 10 sala-glowna 12
+Wlazlo 609384184 15 02 2024 12.15 3 antresola 5
+

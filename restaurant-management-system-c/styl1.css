@@ -1,0 +1,66 @@
+﻿body {
+    font-family: "Arial";
+    font-size: 12pt;
+    counter-reset: licznik;
+    counter-reset: licznikk;
+}
+p:first-of-type {
+    font-weight: bold;
+}
+p:nth-of-type(2)::first-letter {
+    font-size: 24pt;
+}
+p:nth-of-type(7)::first-letter {
+    font-size: 24pt;
+}
+p:nth-of-type(13)::first-letter {
+    font-size: 24pt;
+}
+table {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0pt;
+}
+td:first-of-type {
+    width: 50%;
+    text-align: left;
+    padding-left: 10px;
+}
+td:nth-of-type(2) {
+    width: 20%;
+    text-align: center;
+}
+td:nth-of-type(3) {
+    width: 30%;
+    text-align: center;
+}
+thead {
+    background-color:darkblue;
+    color: white;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background: #CCC;
+}
+a[target="_blank"]:after {
+content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==)
+}
+h2 {
+    counter-increment: licznik +1;
+}
+h2::before {
+  content: counter(licznik)'. ';
+}
+h3{
+    counter-increment: licznikk +1;
+}
+h3::before {
+    content: counter(licznik)'.'counter(licznikk)' ';
+}
+h3:nth-last-of-type(2) {
+    counter-set: licznikk 1;
+}
+
+
+   

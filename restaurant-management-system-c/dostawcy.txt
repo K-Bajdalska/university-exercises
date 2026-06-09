@@ -1,0 +1,9 @@
+Ciastex 506777111 produkty-do-pieczenia poniedzialek 14 8 5 273 14
+Serownia 600222333 sery piatek 7 5 3 166 4
+Meatex 888111000 produkty-miesne czwartek 2 1 6 317 15
+Rybarex 500600700 ryby-owoce-morza wtorek 8 10 10 556 22
+Owocowy-Sad 666000666 owoce-warzywa wtorek 6 7 5 282 5
+SpiceEx 999000111 przyprawy wtorek 10 12 14 769 27
+Slodyczolandia 500400333 produkty-do-deserow sroda 3 6 4 211 8
+Drink-Think 444000456 napoje-bezalkoholowe piatek 14 11 9 477 7
+Alcotex 999876543 napoje-alkoholowe czwartek 6 2 3 188 4
