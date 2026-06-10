@@ -1,0 +1,69 @@
+public class Matrix_model {
+    private int [][] data;
+    private int rows;
+    private int columns;
+
+    public Matrix_model(int r, int c) {
+            rows = r;
+            columns = c;
+            data = new int[rows][columns];
+    }
+    public int [][] get_data() {
+        return data;
+    }
+    public void set_data(int [][] data) throws Matrix_exception {
+        if (data.length != rows || data[0].length != columns) {
+            throw new Matrix_exception("Nieprawidłowe wymiary danych wejściowych");
+        }
+        for (int i = 0; i < rows; i++) {
+            System.arraycopy(data[i], 0, this.data[i], 0, columns);
+        }
+    }
+
+    public void transpose(){
+        int[][] transposedData = new int[columns][rows];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                transposedData[j][i] = data[i][j];
+            }
+        }
+        data = transposedData;
+        int temp = rows;
+        rows = columns;
+        columns = temp;
+    }
+
+    public Matrix_model multiply (Matrix_model other) throws Matrix_exception {
+        if (this.columns != other.rows) {
+            throw new Matrix_exception("Nie mozna pomnozyc macierzy - liczba kolumn pierwszej macierzy musi być równa liczbie wierszy drugiej macierzy.");
+        }
+
+        Matrix_model result = new Matrix_model(this.rows, other.columns);
+        for (int i = 0; i < this.rows; i++) {                   // iteracja po wierszach pierwszej macierzy
+            for (int j = 0; j <other.columns; j++) {            // iteracja po kolumnach drugiej macierzy
+                for (int k = 0; k < this.columns; k++) {        // iteracja po kolumnach pierwszej i wierszach drugiej
+                    result.data[i][j] += this.data[i][k] * other.data[k][j];
+                }
+            }
+        }
+        return result;
+    }
+
+    public Matrix_model multiply_and_mod(Matrix_model other) throws Matrix_exception {
+        Matrix_model result = this.multiply(other);
+        int mod_value = this.rows * this.columns * other.columns;
+        for (int i = 0; i < result.rows; i++) {
+            for (int j = 0; j < result.columns; j++) {
+                result.data[i][j] %= mod_value;
+            }
+        }
+        return result;
+    }
+
+}
+
+class Matrix_exception extends Exception {
+    public Matrix_exception(String message) {
+        super(message);
+    }
+}
